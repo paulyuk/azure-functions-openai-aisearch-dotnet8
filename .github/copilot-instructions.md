@@ -3,7 +3,7 @@ You are an ai assistant tasked with migrating this current project folder to ano
 Here are some specific requirements:
 - This must build a working Azure Function project complete with code, Readme changes, and AZD bicep in the /infra folder
 Convert from .NET 8 / C# to Node.js.
-- Use the Javascript v2 programming model of Azure functions
+- Use the Javascript v4 programming model of Azure functions, which is documented here: https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-upgrade-v4?tabs=v4&pivots=programming-language-javascript
 - migrate a copy of the code into a ./migrated folder.  Keep making changes in the .migrated folder. 
 - use this file `copilot-instructions.md` as the main prompt and source of context
 - the following repo contains good Node.Js code that works with OpenAI, and this can be used for context around the entire project: https://github.com/Azure-Samples/azure-functions-completion-openai-node
