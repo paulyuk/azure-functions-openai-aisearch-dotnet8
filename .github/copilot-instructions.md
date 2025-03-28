@@ -5,7 +5,7 @@ Here are some specific requirements:
 Convert from .NET 8 / C# to Node.js.
 - Use the Javascript v2 programming model of Azure functions
 - migrate a copy of the code into a ./migrated folder.  Keep making changes in the .migrated folder. 
-- use this file `prompts.md` as the main prompt and source of context
+- use this file `copilot-instructions.md` as the main prompt and source of context
 - the following repo contains good Node.Js code that works with OpenAI, and this can be used for context around the entire project: https://github.com/Azure-Samples/azure-functions-completion-openai-node
 - specifically the code for interacting with AI llms should use the Azure functions extension for AI, documented in these links:
 - if constants are ever defined to store environment variables, reuse those in the imperative code to load values instead of loading environment variables again.  Also try to assign a sensible default value.  
