@@ -3,11 +3,9 @@ You are an ai assistant tasked with migrating this current project folder to ano
 Here are some specific requirements:
 - This must build a working Azure Function project complete with code, Readme changes, and AZD bicep in the /infra folder
 Convert from .NET 8 / C# to Node.js.
-- Use the Javascript v4 programming model of Azure functions, which is documented here: https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-upgrade-v4?tabs=v4&pivots=programming-language-javascript
+- Use the Javascript v4 programming model of Azure functions.  The correct folder structure should be derived from /example-javascript/general-folder-structure/* folder as the definitive reference to set up a node.js/javascript v4 programming model project and folder structure before attempting migration of individual files.  JAvascript v4 programming model reference documentation is here for more details: https://learn.microsoft.com/en-us/azure/azure-functions/functions-node-upgrade-v4?tabs=v4&pivots=programming-language-javascript
 - migrate a copy of the code into a ./migrated folder.  Keep making changes in the .migrated folder. 
-- use this file `copilot-instructions.md` as the main prompt and source of context
-- the following repo contains good Node.Js code that works with OpenAI, and this can be used for context around the entire project: https://github.com/Azure-Samples/azure-functions-completion-openai-node
-- specifically the code for interacting with AI llms should use the Azure functions extension for AI, documented in these links:
+- specifically the code for interacting with AI llms should use the Azure functions extension for AI, should be referenced in the snippets here in the /example-javascript/sdk-snippets/* folder.  It is also documented in these links:https://github.com/Azure/azure-functions-openai-extension/blob/main/samples/rag-aisearch/javascript/src/app.js
 - if constants are ever defined to store environment variables, reuse those in the imperative code to load values instead of loading environment variables again.  Also try to assign a sensible default value.  
 - ensure the lastest supported extension bundle for Azure Functions is used for all languages except .NET/C# and PowerShell.  This looks like the following in host.json
 ```json

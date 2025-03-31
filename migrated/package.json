@@ -1,16 +1,16 @@
 {
-  "name": "migrated-azure-function",
+  "name": "azure-functions-openai-aisearch-nodejs",
   "version": "1.0.0",
-  "description": "Migrated Azure Functions project from .NET 8 / C# to Node.js",
-  "main": "src/index.js",
+  "description": "Azure Functions OpenAI AI Search integration using Node.js",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests yet...\""
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
-    "openai": "^3.2.1"
+    "@azure/openai": "^2.0.0",
+    "@azure/search-documents": "^12.0.0"
   },
-  "author": "",
-  "license": "MIT"
+  "devDependencies": {},
+  "main": "src/index.js"
 }
